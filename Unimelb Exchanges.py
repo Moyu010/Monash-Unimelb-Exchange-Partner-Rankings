@@ -41,7 +41,7 @@ def main():
     # sort it based on rankings, split to take care of 101-200th styled rankings
     uni_list.sort(key=lambda x: int(x.rank.split("-")[0]))
     # Writing to file cuz it takes too long to run each time
-    with open("data.csv", "wt", encoding="utf-8") as f:
+    with open("data_unimelb.csv", "wt", encoding="utf-8") as f:
         writer = csv.writer(f, delimiter=",")
         # headers
         writer.writerow(["Name", "Rank", "Link", "Location", "Faculty"])
